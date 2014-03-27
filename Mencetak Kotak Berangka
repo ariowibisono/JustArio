@@ -1,0 +1,25 @@
+import java.util.*;
+public class MemunculkanAngka{
+	public static void main (String [] p) {
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.printf ("Masukkan Awal Loop : ");
+		int awal=sc.nextInt();
+		System.out.printf ("Masukkan Akhir Loop : ");
+		int akhir=sc.nextInt();
+		int c=awal;
+		
+		if (awal < akhir) {
+			while (c <= akhir){
+				System.out.println(c);
+				c++;
+			}
+		}
+		else {
+			while (c >= akhir){
+				System.out.println(c);
+				c--;
+			}
+		}
+	}
+}
