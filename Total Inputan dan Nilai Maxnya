@@ -1,0 +1,29 @@
+import java.util.*;
+public class TotalAngka{
+	public static void main (String [] p) {
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.printf ("Masukkan Jumlah Angka : ");
+		int angka=sc.nextInt();
+		int nomor=1;
+		int total=0;
+		int max=0;
+		
+		while (nomor <= angka){
+			System.out.printf("Masukkan Angka ke "+nomor+" : " );
+			int jumlah=sc.nextInt();
+			
+			if (nomor==1)
+				max=jumlah;
+			
+			if (max<jumlah){
+				max=jumlah;
+				}
+			total +=jumlah;
+			nomor++;
+		}
+		System.out.printf ("\n Jumlah Keseluruhan : "+total);
+		System.out.printf ("\n Nilai Tertinggi : "+max);
+		
+	}
+}
