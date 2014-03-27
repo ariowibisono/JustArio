@@ -1,0 +1,21 @@
+import java.util.*;
+public class LoopingBintang{
+	public static void main (String [] p) {
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.printf ("Masukkan Jumlah Angka : ");
+		int angka=sc.nextInt();
+		
+		int c=0;
+		while (c<angka){
+			int d=angka;
+			while (d>0){
+				System.out.print ("*");
+				d--;
+			}
+		System.out.println();
+		c++;
+		}
+		
+	}
+}
