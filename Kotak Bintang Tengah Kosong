@@ -1,0 +1,28 @@
+import java.util.*;
+public class LoopingBintang2{
+	public static void main (String [] p) {
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.printf ("Masukkan Jumlah Baris : ");
+		int baris=sc.nextInt();
+
+		System.out.printf ("Masukkan Jumlah Kolom : ");
+		int kolom=sc.nextInt();
+		
+		int c=0;
+		while (c<baris){
+			int d=0;
+			while (d<kolom){
+				//cek kondisi
+				if ((d==0) || (c==0) || (d==kolom-1) || (c==baris-1))
+					System.out.print ("*");
+				else
+					System.out.print (" ");
+				d++;
+			}
+		System.out.println();
+		c++;
+		}
+		
+	}
+}
